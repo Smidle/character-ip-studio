@@ -1,55 +1,67 @@
-# 角色 IP 生成器
+# Character IP Studio
 
-将一张人物参考图转成一套可复用的角色 IP 素材：先确定整体风格，再生成三视图与 8 张统一风格的表情贴纸。
+[![GitHub stars](https://img.shields.io/github/stars/Smidle/character-ip-studio?style=flat&label=Stars)](https://github.com/Smidle/character-ip-studio/stargazers)
+[![Star History](https://img.shields.io/badge/Star%20history-view-ffcb47?style=flat)](https://star-history.com/#Smidle/character-ip-studio&Date)
+[![Repository traffic](https://img.shields.io/badge/Repository%20traffic-view-2ea44f?style=flat)](https://github.com/Smidle/character-ip-studio/graphs/traffic)
 
-## 能做什么
+从一张参考图出发，制作一套可复用的角色 IP 素材。它适合像素艺术、轻松卡通、现代插画和其他由用户确认的视觉方向，而不局限于任何单一角色比例或风格。
 
-- 支持 3 头身 Q 版、像素风个人 IP，以及非 Q 版插画角色。
-- 先用统一的选择题确认视觉风格、比例、质感、配色、背景、识别元素和使用场景。
-- 生成正面、侧面、背面三视图作为视觉锚点。
-- 生成挥手、点赞、思考、震惊、努力、哭泣、生气、敬礼 8 张独立表情。
-- 输出角色一致性说明与逐张检查报告；只有在用户确认后才作为最终交付。
+## 功能
 
-## 工作流程
+- 先用统一的选择题确认画风、身材设定、细节、色彩、背景、记忆点与用途。
+- 输出前、侧、背三视图，作为整套素材的视觉基准。
+- 输出 8 张独立姿势图，可用于聊天、社媒和品牌视觉。
+- 生成角色说明与逐项质量审核，用户确认后才标记为最终交付。
+- 支持透明底色的贴纸制作流程。
 
-```text
-整体风格选择题 → 三视图 → 8 张表情 → 一致性检查 → 用户确认 → 交付文件夹
-```
-
-## 使用方式
-
-在 Codex 中安装或引用该技能后，上传一张人物参考图，然后说：
+## 使用流程
 
 ```text
-使用 $q-character-generator，基于这张图生成一套个人 IP 形象素材。
+创意选择 → 角色三视图 → 8 个姿势 → 质量审核 → 用户确认 → 交付
 ```
 
-技能会先发出统一的 7 项选择题。你可以直接用编号回复，例如：
+## 快速开始
+
+安装技能后，上传一张人物或角色参考图，并输入：
+
+```text
+使用 $character-ip-studio，基于这张图制作一套角色 IP 素材。
+```
+
+技能会先给出 7 道选择题。你可以直接回复：
 
 ```text
 1B，2C，3B，4A，5A，6A，7C
 ```
 
-这表示：像素风个人 IP、沿用参考图比例、粗颗粒像素、沿用参考图配色、浅色背景、保留全部识别元素、用于品牌素材。
+这代表：像素艺术、沿用参考图身材、明显方格像素、保留原配色、明亮纯色底、完整保留外观特征、用于品牌视觉资产。
 
-## 安装
-
-将本仓库链接发给 Codex，并说“安装这个 skill”即可。也可以使用本地技能安装器从仓库根目录安装。
-
-## 输出内容
+## 产出文件
 
 ```text
-00-three-view.png
-01-happy-wave.png
-02-thumbs-up.png
-03-thinking.png
-04-shocked.png
-05-working-hard.png
-06-crying.png
-07-angry-cute.png
-08-salute-received.png
-character-anchor.md
-consistency-check.md
+model-sheet.png
+pose-greeting.png
+pose-positive.png
+pose-considering.png
+pose-surprise.png
+pose-focus.png
+pose-upset.png
+pose-firm.png
+pose-acknowledged.png
+identity-notes.md
+quality-review.md
 ```
 
-默认会把所有素材整理在同一交付文件夹中，不会生成压缩包，除非你明确要求。
+所有文件会放在同一个交付目录中；除非明确要求，否则不会压缩。
+
+## 数据面板
+
+- [查看当前 Star 数](https://github.com/Smidle/character-ip-studio/stargazers)
+- [查看 Star 历史趋势](https://star-history.com/#Smidle/character-ip-studio&Date)
+- [查看仓库访问数据](https://github.com/Smidle/character-ip-studio/graphs/traffic)
+
+GitHub 的访问面板由仓库权限控制，且原生仅展示最近 14 天的浏览与克隆数据；Star History 用于长期查看 Star 变化。
+
+## 说明
+
+本项目受 [DannyZZ2/q-character-generator](https://github.com/DannyZZ2/q-character-generator) 的工作流启发后进行独立二次创作。当前的交互问卷、文档结构、交付命名和提示写法均已重新设计，以服务更广泛的角色 IP 素材制作。

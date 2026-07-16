@@ -1,7 +1,7 @@
 interface:
-  display_name: "角色 IP 生成器"
-  short_description: "从参考图生成一致的三视图与表情素材"
-  default_prompt: "Use $q-character-generator to create a consistent character IP from an uploaded reference image, starting with the required style questionnaire."
+  display_name: "角色 IP 工作室"
+  short_description: "从参考图制作统一的角色素材套件"
+  default_prompt: "Use $character-ip-studio to create a reusable character asset kit from an uploaded reference image."
 
 policy:
   allow_implicit_invocation: true
